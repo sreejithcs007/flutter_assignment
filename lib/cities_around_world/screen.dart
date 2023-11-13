@@ -62,8 +62,8 @@ class Screen extends StatelessWidget{
                    height: 100,
                    child:Row(
                      children: [
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
+                       const Padding(
+                         padding: EdgeInsets.only(left: 8.0),
                          child: Image(image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuB22Sd8fdhiIRTdBveF_tZ0wo0OW_HzHW5Cxt9LZJuZRa2gv4"),
                            fit: BoxFit.fill,
                            height: 100,
@@ -75,9 +75,9 @@ class Screen extends StatelessWidget{
                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
-                               Text("Finland ",
+                               const Text("Finland ",
                                  style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.black),),
-                               RichText(text: TextSpan(
+                               RichText(text: const TextSpan(
                                    children: [TextSpan(text:"Europe\n",
                                        style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black)),
                                      TextSpan(text: "Population : 5.54 mil",
@@ -100,8 +100,8 @@ class Screen extends StatelessWidget{
                    height: 100,
                    child:Row(
                      children: [
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
+                       const Padding(
+                         padding: EdgeInsets.only(left: 8.0),
                          child: Image(image: NetworkImage("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrrY74qGSydl78GDBjHNchbEK5JRObKpRtDSsytPQiob6x9wn2"),
                          fit: BoxFit.fill,
                          height: 100,
@@ -113,9 +113,9 @@ class Screen extends StatelessWidget{
                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
-                               Text("London ",
+                               const Text("London ",
                                  style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.black),),
-                               RichText(text: TextSpan(
+                               RichText(text: const TextSpan(
                                    children: [TextSpan(text:"UK\n",
                                        style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black)),
                                      TextSpan(text: "Population : 8.8mil",
@@ -138,8 +138,8 @@ class Screen extends StatelessWidget{
                    height: 100,
                    child:Row(
                      children: [
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
+                       const Padding(
+                         padding: EdgeInsets.only(left: 8.0),
                          child: Image(image: NetworkImage("https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/9e/3a.jpg"),
                            fit: BoxFit.fill,
                            height: 100,
@@ -151,9 +151,9 @@ class Screen extends StatelessWidget{
                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
-                               Text("Vancouver",
+                               const Text("Vancouver",
                                  style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.black),),
-                               RichText(text: TextSpan(
+                               RichText(text: const TextSpan(
                                    children: [TextSpan(text:"Canada\n",
                                        style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black)),
                                      TextSpan(text: "Population : 2.6 mil",
@@ -176,8 +176,8 @@ class Screen extends StatelessWidget{
                    height: 100,
                    child:Row(
                      children: [
-                       Padding(
-                         padding: const EdgeInsets.only(left: 8.0),
+                       const Padding(
+                         padding: EdgeInsets.only(left: 8.0),
                          child: Image(image: NetworkImage("https://media.istockphoto.com/id/1158037142/photo/statue-of-liberty-in-front-of-the-manhattan-skyline-with-seagulls-and-boats.jpg?s=612x612&w=0&k=20&c=Je_fGHxQ_hDEjlh8jFqS2uphJa3XmF_kI5jAfoZpWBk="),
                             fit: BoxFit.fill,
                            height: 100,
@@ -189,9 +189,9 @@ class Screen extends StatelessWidget{
                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
-                               Text("Newyork ",
+                               const Text("Newyork ",
                                  style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.black),),
-                               RichText(text: TextSpan(
+                               RichText(text: const TextSpan(
                                    children: [TextSpan(text:"USA\n",
                                        style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black)),
                                      TextSpan(text: "Population : 3.9 mil",
