@@ -3,7 +3,7 @@ void main(){
   runApp(MaterialApp(home: Screen2(),));
 }
 class Screen2 extends StatelessWidget{
-  var img = ["assets/image/apple.png","assets/image/mango.png","assets/image/banana.png","assets/image/grapes.png","assets/image/watermelon.png",
+  var img = ["assets/image/apple.png","assets/image/mango.png","assets/image/banana.png","assets/image/grape.png","assets/image/watermelon.png",
     "assets/image/kiwi.png","assets/image/orange.png"];
   var txt = ["Apple","Mango","Banana","Grape","water...","Kiwi","Orange"];
   var unt = ["kg","Doz","Doz","Kg","Kg","pc","Doz"];
@@ -33,6 +33,7 @@ class Screen2 extends StatelessWidget{
                            child: Image(image: AssetImage(img[index] ),
                            height: 100,width: 100,
                              fit: BoxFit.fill,
+
                            ),
                          ),
                          Padding(
