@@ -3,8 +3,8 @@ void main(){
   runApp(MaterialApp(home: Screen2(),));
 }
 class Screen2 extends StatelessWidget{
-  var img = ["assets/image/apple.jpg","assets/image/mango.jpg","assets/image/banana.jpg","assets/image/grape.jpg","assets/image/watermelon.jpg",
-    "assets/image/kiwi.jpg","assets/image/orange.jpg"];
+  var img = ["assets/image/apple.png","assets/image/mango.png","assets/image/banana.png","assets/image/grapes.png","assets/image/watermelon.png",
+    "assets/image/kiwi.png","assets/image/orange.png"];
   var txt = ["Apple","Mango","Banana","Grape","water...","Kiwi","Orange"];
   var unt = ["kg","Doz","Doz","Kg","Kg","pc","Doz"];
   var prz = ["20","30","43","8","15","22","12"];
@@ -22,35 +22,39 @@ class Screen2 extends StatelessWidget{
        body:
        ListView.custom(childrenDelegate: SliverChildBuilderDelegate(
                childCount: 7,
-               (context, index) => Container(
-                 height: 100,
-                 child: Padding(
-                   padding: const EdgeInsets.only(left:5.0,right: 5),
-                   child: Card(
+               (context, index) =>
+                  Card(
 
                        color: Colors.blueGrey[200],
                      child:Row(
-                       children: [Padding(padding: const EdgeInsets.only(left: 1,right: 1),),
-                         Image(image: AssetImage(img[index] ),
-                         height: 150,width: 150,
-                         fit: BoxFit.fill,),
+                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                       children: [
+                         SizedBox(
+                           child: Image(image: AssetImage(img[index] ),
+                           height: 100,width: 100,
+                             fit: BoxFit.fill,
+                           ),
+                         ),
                          Padding(
                            padding: const EdgeInsets.only(left: 5.0),
                            child: Column(
-                             mainAxisAlignment: MainAxisAlignment.spaceAround,
-                             crossAxisAlignment: CrossAxisAlignment.start,
+                             mainAxisAlignment: MainAxisAlignment.start,
+
+                             //crossAxisAlignment: CrossAxisAlignment.start,
 
                              children: [
-                            RichText(text: TextSpan(
+                            Center(
+                              child: RichText(text: TextSpan(
 
-                              children: [TextSpan( text:("Name :"),style: TextStyle(color: Colors.black)),
-                                TextSpan(text: (" ${txt[index]}\n"),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
-                                TextSpan(text:("Unit :"),style: TextStyle(color: Colors.black)),
-                                TextSpan(text: (" ${unt[index]}\n"),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
-                                TextSpan(text:("Price : \$"),style: TextStyle(color: Colors.black)),
-                                TextSpan(text: ("${prz[index]}\n"),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),]
+                                children: [TextSpan( text:("Name :"),style: TextStyle(color: Colors.black)),
+                                  TextSpan(text: (" ${txt[index]}\n"),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
+                                  TextSpan(text:("Unit :"),style: TextStyle(color: Colors.black)),
+                                  TextSpan(text: (" ${unt[index]}\n"),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
+                                  TextSpan(text:("Price : \$"),style: TextStyle(color: Colors.black)),
+                                  TextSpan(text: ("${prz[index]}\n"),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),]
 
-                            ))
+                              )),
+                            )
 
 
 
@@ -58,31 +62,29 @@ class Screen2 extends StatelessWidget{
                       ),
                          ),
 
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 3,right: 8),
-                            child: MaterialButton(onPressed: (){},
+
+                           MaterialButton(onPressed: (){},
                                 //shape: StadiumBorder(),
                                color: Colors.blueGrey[900],
-                                 height : 40,
-                              minWidth: 100,
+                              height : 30,
+                              minWidth: 120,
                                child: Text("Add to cart",
                                style: TextStyle(color: Colors.white),),
 
 
 
-                      ),
+
                           ),
-                        ),
+
 
                     ],
               ) ,
             ),
                  ),
                )
-    )
 
-          )
+
+
 
 
     );
