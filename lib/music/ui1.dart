@@ -18,6 +18,7 @@ class MusicUi1 extends StatelessWidget {
       slivers: [
       SliverAppBar(
       floating: false,
+     // pinned: true,
       title: Center(
         child:  Column(
             mainAxisAlignment: MainAxisAlignment.center,
