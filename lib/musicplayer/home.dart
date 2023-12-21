@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assignment/musicplayer/carouselpart.dart';
-import 'package:flutter_assignment/musicplayer/listt.dart';
+import 'package:flutter_assignment/musicplayer1/listt.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 //import 'listpart.dart';

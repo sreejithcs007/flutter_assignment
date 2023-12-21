@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment/tourism/india.dart';
-import 'package:flutter_assignment/tourism/italy.dart';
+import 'package:flutter_assignment/tourism/tourist/india.dart';
+import 'package:flutter_assignment/tourism/tourist/italy.dart';
 import 'german.dart';
 // void main(){
 //   runApp(MaterialApp(home: TourCustom(),));

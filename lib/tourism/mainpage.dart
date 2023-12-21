@@ -15,31 +15,40 @@ class Tourismpage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.purple[900],
       ),
-      body: Container(
-        child: Column(
-          children: [
-            Text("Popular",style: GoogleFonts.ubuntu(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20)
-            ),
-            ListView(
+      body: Column(
+       // mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text("Popular",style: GoogleFonts.ubuntu(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20)
+          ),
+          Expanded(
+            child: ListView(
               children: places.map((e) => GestureDetector(
                 child: Card(
+
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(50),)),
                   child: Stack(
+                    // clipBehavior: Clip.antiAlias,
                     children: [
-                      Image.asset(e["image"]),
+                      Container(
+                          height: 250,
+                          child: Image.asset(e["image"],fit: BoxFit.fill,)),
+
                     Positioned(
-                        top: 200,
+                        top: 230,
+                        left: 10,
                         bottom: 0,
-                        child: Text(e["name"]))
+                        child: Text(e["name"],style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20),))
                     ],
                   ),
                 ),
-                onTap: gotodetails(context,e["id"]),
+                onTap:()=> gotodetails(context,e["id"]),
               )
               ).toList(),
-            )
+            ),
+          )
 
-          ],
-        ),
+        ],
       ),
 
 

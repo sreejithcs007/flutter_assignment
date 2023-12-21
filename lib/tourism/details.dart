@@ -76,7 +76,7 @@ class Details extends StatelessWidget{
             ],
 
                  options: CarouselOptions(
-                  height: 150,
+                  height: 100,
                   autoPlay: true,
                   autoPlayInterval: const Duration(seconds: 2),
                 )
