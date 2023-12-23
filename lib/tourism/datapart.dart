@@ -55,14 +55,17 @@ List<Map<String,dynamic>>places =[
   {
     "id":4,
     "name":"India",
-    "image":"assets/image/Main_Gate_-_Taj_Mahal.jpeg",
+    "image":"assets/image/opening.jpg",
     "description":"India, country that occupies the greater part of South Asia. India is made up of 28 states and "
         "eight union territories, and its national capital is New Delhi, built in the 20th century just south of "
         "the historic hub of Old Delhi to serve as India’s administrative centre. Its government is a constitutional"
         "republic that represents a"
         " highly diverse population consisting of thousands of ethnic groups and hundreds of languages."
         "India is a home to the finest architectural heritage,"
-        " serene ghats, spectacular landscapes and largest tiger reserve.",
+        "India remains one of the most ethnically diverse countries in the world. Apart from its many religions and sects,"
+        " India is home to innumerable castes and tribes, as well as  a dozen major "
+        "and hundreds of minor linguistic groups ."
+    ,
     "cimage1":"assets/image/india1.jpeg",
     "cimage2":"assets/image/india2.jpeg",
     "cimage3":"assets/image/india3.jpg",
