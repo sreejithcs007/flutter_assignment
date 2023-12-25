@@ -1,55 +1,43 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment/farmer/main.dart';
 void main(){
-  runApp(MaterialApp(home: FarmerH(),));
+  runApp(MaterialApp(home: Farmer(),));
 }
 
-class FarmerH extends StatefulWidget{
+class Farmer extends StatefulWidget{
   @override
-  State<StatefulWidget> createState() => FarmerHState();
-  }
+  State<Farmer> createState() => _FarmerState();
+}
 
-class FarmerHState extends State<FarmerH>{
+class _FarmerState extends State<Farmer> {
+  @override
+  void initState() {
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>Mainui()));
+    });
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-   body: CustomScrollView(
-     slivers: [
-       SliverAppBar(title: Text("FARMERS FRESH ZONE",
-         style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),
-       ),
-         backgroundColor: Colors.green,
-         bottom: PreferredSize(preferredSize: Size(70, 70),
-             child: Padding(
-               padding: const EdgeInsets.all(8.0),
-               child:
-               // Container(
-               //   width: 470,
-               //   height: 40,
-               //   child:
-                 SizedBox(
-                   width: 540,
-                   height: 40,
-                   child: TextField(
-                     decoration: InputDecoration(
-                       contentPadding: EdgeInsets.symmetric(vertical: 10,),
-                       filled: true,
-                       fillColor: Colors.white,
-                       prefixIcon: Icon(Icons.search),
-                       hintText: "Search for Vegetables and fruits...",
-                       border: OutlineInputBorder(),
-                     ),
-                   ),
-                 ),
-               ),
-             ) ),
-         //actions: [DropdownButton(items: [], onChanged: onChanged)],
-       // ),
 
-     ],
-   ),
-     
+      body: Container(
+        color: Colors.green,
+        child: Center(
+          child:Padding(
+            padding: const EdgeInsets.only(left: 18.0,right: 29),
+            child: Container(
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                image: const DecorationImage(image: AssetImage("assets/image/farmersplash.jpg"),fit: BoxFit.fill)
+              ),
+            ),
+          ) ,
+        ),
+      ),
     );
   }
-
 }
-
