@@ -124,7 +124,7 @@ class Mainui extends StatelessWidget{
                 )
               ]),
 
-              child: const Row(
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
@@ -150,7 +150,12 @@ class Mainui extends StatelessWidget{
                           height: 50,
                          child: Image(image: AssetImage("assets/image/traceability.png",),fit: BoxFit.fill)
                           ),
-                      ),
+                        // child: Container(
+                        //   decoration: BoxDecoration(
+                        //     image: DecorationImage(image: AssetImage("assets/image/traceability.png",),fit: BoxFit.fill))
+                        //   ),
+                         ),
+
                       Padding(
                         padding: EdgeInsets.only(top: 35.0,left: 15),
                         child: Text("TRACEABILITY"),
